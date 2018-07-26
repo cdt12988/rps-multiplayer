@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>RPS-Multiplayer</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script src="assets/js/game.js" defer></script>
+	
+</head>
+
+<body>
+	<header role="banner">
+		<h1>Rock Paper Scissors</h1>
+	</header>
+	
+	<div class="game-container">
+		
+		<div class="new-player">
+			<input type="text" id="player-input">
+			<div class="btn play" id="play">Play</div>
+		</div>
+		
+		<div class="game-message js-hidden">
+			<div class="message" id="msg-1">Message One right here</div>
+			<div class="message" id="msg-2"></div>
+		</div>
+		
+		<div class="player" id="one">
+			<h2 class="name" id="name1">Player One</h2>
+			<div class="choice">Rock</div>
+			<div class="choice">Paper</div>
+			<div class="choice">Scissors</div>
+			<div class="win-counter">Wins: <span id="wins1"></span></div>
+			<div class="win-counter">Losses: <span id="losses1"></span></div>
+		</div>
+		
+		<div class="results">
+			
+		</div>
+		
+		<div class="player" id="two">
+			<div class="name" id="name2">Player Two</div>
+			<div class="choice">Rock</div>
+			<div class="choice">Paper</div>
+			<div class="choice">Scissors</div>
+			<div class="win-counter">Wins: <span id="wins2"></span></div>
+			<div class="win-counter">Losses: <span id="losses2"></span></div>
+		</div>
+	
+		<div class="chat">
+			<div class="chatbox"></div>
+			<div class="chat-input-container">
+				<input type="text" id="chat-input">
+				<div class="btn submit" id="send">Send</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>

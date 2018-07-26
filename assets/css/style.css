@@ -1,0 +1,198 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: 'Encode Sans Condensed', sans-serif;
+	line-height: 1.6;
+	background: #FCFAF9;
+}
+header {
+	width: 100vw;
+	height: 10vh;
+	background: #333;
+	text-align: center;
+	color: #FCFAF9;
+	font-size: 3em;
+	margin-bottom: 5vh;
+}
+.game-container {
+	width: 80%;
+	height: 80vh;
+	margin: 0 auto;
+	background: #48E5C2;
+	border-radius: 1em;
+	border: 1px solid #333;
+	
+	display: grid;
+	grid:
+		". display ." 0.5fr
+		"p1 results p2" 1fr
+		"chat chat chat" 1fr
+		/ 1fr 1fr 1fr;
+}
+.game-message {
+	grid-area: display;
+//	background: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+	color: #333;
+}
+.new-player {
+	grid-area: display;
+	position: relative;
+}
+#player-input {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #333;
+	border-radius: 1em;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	font-size: 1.25em;
+	padding: 0 1em;
+
+}
+#play {
+	height: 50px;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	border-radius: 0.5em;
+}
+.player {
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	padding: 0.25em 1em;
+	background: #FCFAF9;
+	border-radius: 1em;
+	border: 1px solid #333;
+	color: #333;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.name {
+	width: 100%;
+	color: #FCFAF9;
+	background: #333;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 0.25em;
+}
+.choice {
+	align-self: center;
+	font-size: 1.5em;
+	width: 100%;
+	cursor: pointer;
+	text-align: center;
+}
+.choice:hover {
+	background: #333;
+	color: #FCFAF9;
+}
+.win-counter {
+	display: inline;
+}
+.results {
+	grid-area: results;
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	padding: 0.5em;
+	background: #FCFAF9;
+	border-radius: 1em;
+	border: 1px solid #333;
+	color: #333;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+#one {
+	grid-area: p1;
+}
+#two {
+	grid-area: p2;
+}
+.chat {
+	grid-area: chat;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.chatbox {
+	width: 50vw;
+	height: 60%;
+	overflow: auto;
+	margin: 0.5em auto;
+	padding: 1em;
+	background: #FCFAF9;
+	color: #FFF;
+	border-radius: 1em;
+	border: 1px solid #333;
+}
+.chat-input-container {
+	width: 50vw;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+}
+#chat-input {
+/*
+	width: 50vw;
+	height: 50px;
+	margin: 0 auto;
+*/
+	height: 100%;
+	width: 100%;
+	background: #FCFAF9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1em;
+	border: 1px solid #333;
+	outline: none;
+	
+	font-size: 1.25em;
+	padding: 0 1em;
+}
+#send {
+/*
+	position: absolute;
+	bottom: 10.5%;
+	right: 11%;
+*/
+	border-radius: 0.5em;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.btn {
+	background: #333;
+	color: #FCFAF9;
+	padding: 1em;
+	font-size: 1.5em;
+	width: 125px;
+	height: 50px;
+	border-radius: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.js-hidden {
+	display: none;
+}
