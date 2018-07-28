@@ -34,7 +34,7 @@ var game = false;
 //	This checks each time the players directory is updated and updates the game displays and variables
 //	depending on if both players are connected (will need to .remove() onDisconnect() later so that
 //	these are updated when a player disconnects (because the players/child will no longer exist).
-db.ref('players/').on('value', function(playersSnap) {
+db.ref('players').on('value', function(playersSnap) {
 
 	//	Check to see of player 1 exists or not
 	if(playersSnap.child('p1').exists()) {
@@ -97,6 +97,7 @@ db.ref('players/').on('value', function(playersSnap) {
 	}
 	if(!player1Exists || !player2Exists) {
 		game = false;
+		db.ref('chat').remove();
 	}
 
 }, function(error) {
