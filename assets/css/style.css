@@ -83,6 +83,12 @@ header {
 	justify-content: center;
 	align-items: flex-start;
 }
+#missing1 {
+	grid-area: p1;
+}
+#missing2 {
+	grid-area: p2;
+}
 .name {
 	width: 100%;
 	color: #FCFAF9;
@@ -91,14 +97,19 @@ header {
 	text-align: center;
 	margin-bottom: 0.25em;
 }
-.choice {
+.waiting {
+	font-size: 1.25em;
+}
+.choice1,
+.choice2 {
 	align-self: center;
 	font-size: 1.5em;
 	width: 100%;
 	cursor: pointer;
 	text-align: center;
 }
-.choice:hover {
+.choice1:hover,
+.choice2:hover {
 	background: #333;
 	color: #FCFAF9;
 }
