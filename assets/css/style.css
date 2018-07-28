@@ -180,6 +180,9 @@ header {
 	font-size: 1.25em;
 	padding: 0 1em;
 }
+.chatbox {
+	color: black;
+}
 #send {
 /*
 	position: absolute;
