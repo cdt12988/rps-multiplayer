@@ -4,6 +4,8 @@ Link to Game: [https://cdt12988.github.io/rps-multiplayer/](https://cdt12988.git
 
 This game of Rock, Paper, Scissors does not pit you against a random computer-selected answer, but instead allows you to play against other people!
 
+![Screenshot](https://cdt12988.github.io/images/portfolio/rps.PNG "RPS Multiplayer Screenshot")
+
 ## Game Features
 
 ### Players
